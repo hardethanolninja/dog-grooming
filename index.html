@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pretty Pets</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css"
+      integrity="sha512-Go0fX6Al6Eab+N7QbSFHYBpwdcU2rbfONUcbRIS4z+9yzLlj7Xj8ao2BAOPE9Qtxdl+7iq04xzzcF4OTOWoUWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="dist/hamburgers.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <p class="site_logo"><span>P</span>retty <span>P</span>ets</p>
+      <ul id="myMenu">
+        <li data-menuanchor="home"><a href="#home">Home</a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="services"><a href="#services">Services</a></li>
+        <li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+    <div id="fullpage">
+      <div class="section s1" data-tooltip="Home" data-anchor="home">
+        <div class="page_container">
+          <div class="home_page-top"><h1>Pretty Pets</h1></div>
+          <div class="home_page-mid">
+            <div>
+              <h1>Pet cleaning services</h1>
+              <h2>Get your pet so nice and clean</h2>
+            </div>
+            <img
+              src="/images/img1_nobg.png"
+              alt="corgi puppy"
+              class="home_img"
+            />
+          </div>
+          <div class="home_page-bot">
+            <p>Anytown's Premier pet grooming service</p>
+          </div>
+        </div>
+        <div class="section s2" data-tooltip="About" data-anchor="about">
+          About
+        </div>
+        <div class="section s3" data-tooltip="Services" data-anchor="services">
+          Services
+        </div>
+        <div class="section s4" data-tooltip="Gallery" data-anchor="gallery">
+          <div class="slide" data-anchor="gallery-1">Gallery 1</div>
+          <div class="slide" data-anchor="gallery-2">Gallery 2</div>
+          <div class="slide" data-anchor="gallery-3">Gallery 3</div>
+        </div>
+        <div class="section s4" data-tooltip="Contact" data-anchor="contact">
+          Contact
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
+      integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

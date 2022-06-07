@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Roboto&family=Rubik+Bubbles&display=swap");
+
+/* font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Bubbles', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  --light-blue: #8ecae6;
+  --medium-blue: #219ebc;
+  --dark-blue: #023047;
+  --medium-yellow: #ffb703;
+  --light-orange: #ffb84e;
+  --medium-orange: #fb8500;
+  --dark-orange: #f76b1c;
+  --light-gray: #f5f5f5;
+  --medium-gray: #acacac;
+  --dark-gray: #8f8f8f;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--light-gray);
+  position: fixed;
+  height: 60px;
+  top: 0;
+  z-index: 99;
+}
+
+.hamburger {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin: 0 50px;
+}
+
+.site_logo {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: var(--medium-blue);
+  font-size: 2rem;
+  margin: 4px 8px;
+}
+
+.site_logo span {
+  font-size: 4rem;
+}
+
+#myMenu {
+  display: flex;
+}
+
+#myMenu a {
+  font-family: "Roboto", sans-serif;
+  color: var(--medium-blue);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 8px;
+}
+
+.page_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.s1 {
+  background-color: var(--medium-orange);
+}
+
+.home_page-top {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: white;
+  font-size: 3rem;
+}
+
+.home_page-mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.home_page-bot {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.home_img {
+}
+
+#fp-nav ul li a span {
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 768px) {
+  #myMenu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .home_page-top {
+    font-size: 2rem;
+  }
+
+  .home_page-mid {
+    flex-direction: column;
+    margin-bottom: -50px;
+  }
+
+  .home_page-mid img {
+    height: 200px;
+    padding-top: -100px;
+  }
+}
